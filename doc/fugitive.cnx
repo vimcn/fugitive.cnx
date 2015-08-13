@@ -1,33 +1,32 @@
-*fugitive.txt*  A Git wrapper so awesome, it should be illegal
+*fugitive.txt*  一个强大到可怕的 Git 包，它不会是非法的吧？
 
-Author:  Tim Pope <http://tpo.pe/>
-License: Same terms as Vim itself (see |license|)
+作者：Tim Pope <http://tpo.pe/>
+译者：闲耘 <http://hotoo.me>
+许可证：与 Vim 相同 （阅读 |license|）
 
-This plugin is only available if 'compatible' is not set.
+这个插件仅在未设置 'compatible' 时可用。
 
-INTRODUCTION                                    *fugitive*
+简介                                            *fugitive*
 
-Whenever you edit a file from a Git repository, a set of commands is defined
-that serve as a gateway to Git.
+当你编辑一个 Git 仓库的文件时，有许多已定义的 Git 入口命令供使用。
 
-COMMANDS                                        *fugitive-commands*
+命令                                            *fugitive-commands*
 
-These commands are local to the buffers in which they work (generally, buffers
-that are part of Git repositories).
+这些命令是当前的工作缓冲区有效的（通常，这些缓冲区是 Git 仓库的一部分）。
 
                                                 *fugitive-:Git*
-:Git [args]             Run an arbitrary git command. Similar to :!git [args]
-                        but chdir to the repository tree first.
+:Git [args]             运行任意的 git 命令。类似 :!git [args]
+                        但是会先 chdir 到仓库目录。
 
                                                 *fugitive-:Git!*
-:Git! [args]            Like |:Git|, but capture the output into a temp file,
-                        and edit that temp file.
+:Git! [args]            类似 |:Git|，会捕获输出到一个临时文件，
+                        并编辑这个临时文件。
 
                                                 *fugitive-:Gcd*
-:Gcd [directory]        |:cd| relative to the repository.
+:Gcd [directory]        相对当前仓库 |:cd|。
 
                                                 *fugitive-:Glcd*
-:Glcd [directory]       |:lcd| relative to the repository.
+:Glcd [directory]       相对当前仓库 |:lcd|。
 
                                                 *fugitive-:Gstatus*
 :Gstatus                Bring up the output of git-status in the preview
